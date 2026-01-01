@@ -49,7 +49,19 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="lg:col-span-4 hidden lg:block">
+              <div className="lg:col-span-4 flex flex-col items-end justify-center gap-8">
+                {/* my photo */}
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-foreground rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 animate-pulse"></div>
+                  <div className="relative w-64 h-64 rounded-full overflow-hidden border-2 border-foreground/20 group-hover:border-foreground/40 transition-all duration-300 shadow-2xl">
+                    <img
+                      src="/professional-photo.jpg"
+                      alt="Rishiraj Pathak"
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
+                </div>
+
                 <div className="space-y-4 text-right">
                   <p className="font-mono text-xs text-muted-foreground tracking-widest">
                     BASED IN

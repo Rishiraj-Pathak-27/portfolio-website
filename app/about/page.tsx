@@ -135,7 +135,7 @@ export default function AboutPage() {
               <div className="lg:col-span-8 space-y-16">
                 {/* Bachelor's Degree */}
                 <div className="relative pl-8 border-l-2 border-border hover:border-foreground/20 transition-colors">
-                  <div className="absolute -left-[5px] top-0 w-2 h-2 bg-foreground rounded-full" />
+                  <div className="absolute -left-1.25 top-0 w-2 h-2 bg-foreground rounded-full" />
                   <div className="space-y-3">
                     <p className="font-mono text-xs text-muted-foreground">
                       2024 — Present
@@ -176,7 +176,7 @@ export default function AboutPage() {
 
                 {/* Higher Secondary Education */}
                 <div className="relative pl-8 border-l-2 border-border hover:border-foreground/20 transition-colors">
-                  <div className="absolute -left-[5px] top-0 w-2 h-2 bg-foreground rounded-full" />
+                  <div className="absolute -left-1.25 top-0 w-2 h-2 bg-foreground rounded-full" />
                   <div className="space-y-3">
                     <p className="font-mono text-xs text-muted-foreground">
                       2021 — 2024
@@ -195,7 +195,7 @@ export default function AboutPage() {
 
                 {/* Secondary Education */}
                 <div className="relative pl-8 border-l-2 border-border hover:border-foreground/20 transition-colors">
-                  <div className="absolute -left-[5px] top-0 w-2 h-2 bg-foreground rounded-full" />
+                  <div className="absolute -left-1.25 top-0 w-2 h-2 bg-foreground rounded-full" />
                   <div className="space-y-3">
                     <p className="font-mono text-xs text-muted-foreground">
                       2020 — 2021

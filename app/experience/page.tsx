@@ -145,7 +145,7 @@ export default function ExperiencePage() {
                       {/* Project Image */}
                       {project.image && (
                         <div className="relative h-48 overflow-hidden bg-muted/30">
-                          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background z-10" />
+                          <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-background z-10" />
                           <img
                             src={project.image}
                             alt={project.title}
@@ -184,7 +184,7 @@ export default function ExperiencePage() {
                                   key={idx}
                                   className="text-sm text-muted-foreground flex items-start"
                                 >
-                                  <span className="mr-2 mt-1.5 h-1 w-1 rounded-full bg-foreground/50 flex-shrink-0" />
+                                  <span className="mr-2 mt-1.5 h-1 w-1 rounded-full bg-foreground/50 shrink-0" />
                                   {feature}
                                 </li>
                               ))}
