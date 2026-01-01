@@ -49,20 +49,20 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="lg:col-span-4 flex flex-col items-end justify-center gap-8">
+              <div className="lg:col-span-4 flex flex-col items-center lg:items-end justify-center gap-8">
                 {/* my photo */}
-                <div className="relative group">
+                <div className="relative group w-full max-w-xs sm:max-w-sm lg:max-w-none">
                   <div className="absolute inset-0 bg-foreground rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 animate-pulse"></div>
-                  <div className="relative w-64 h-64 rounded-full overflow-hidden border-2 border-foreground/20 group-hover:border-foreground/40 transition-all duration-300 shadow-2xl">
+                  <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto lg:mx-0 rounded-full overflow-hidden border-2 border-foreground/20 group-hover:border-foreground/40 transition-all duration-300 shadow-2xl">
                     <img
                       src="/professional-photo.jpg"
                       alt="Rishiraj Pathak"
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                     />
                   </div>
                 </div>
 
-                <div className="space-y-4 text-right">
+                <div className="space-y-4 text-center lg:text-right w-full">
                   <p className="font-mono text-xs text-muted-foreground tracking-widest">
                     BASED IN
                   </p>
