@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Space_Grotesk, Playfair_Display, JetBrains_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const spaceGrotesk = Space_Grotesk({
@@ -20,9 +19,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Your Name | Engineering Student Portfolio",
-  description: "Portfolio of an engineering student showcasing skills, experience, and projects.",
-  generator: "v0.app",
+  title: "Rishiraj Pathak | Software Engineering Student Portfolio",
+  description: "Portfolio of Rishiraj Pathak - Software engineering student showcasing skills, experience, and projects.",
   icons: {
     icon: [
       {
@@ -53,7 +51,6 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${playfairDisplay.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
         {children}
-        <Analytics />
       </body>
     </html>
   )

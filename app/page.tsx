@@ -1,7 +1,7 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { ArrowRight, ArrowDownRight } from "lucide-react"
-import Link from "next/link"
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { ArrowRight, ArrowDownRight } from "lucide-react";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -19,13 +19,14 @@ export default function HomePage() {
                     Engineering Student
                   </p>
                   <h1 className="text-5xl sm:text-6xl lg:text-8xl font-serif font-medium leading-[0.9] tracking-tight text-balance">
-                    Your Name
+                    Rishiraj Pathak
                   </h1>
                 </div>
 
                 <p className="text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed">
-                  I build things that work. Currently pursuing my engineering degree, focused on creating solutions that
-                  blend technical precision with thoughtful design.
+                  Passionate engineering student specializing in Electronics and Computer Science. 
+                  I build innovative software solutions, exploring new technologies 
+                  and solving complex problems through hands-on projects.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
@@ -34,7 +35,10 @@ export default function HomePage() {
                     className="group inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 text-sm font-medium hover:bg-foreground/90 transition-colors"
                   >
                     Learn more about me
-                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight
+                      size={16}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
                   </Link>
                   <Link
                     href="/resume"
@@ -47,8 +51,10 @@ export default function HomePage() {
 
               <div className="lg:col-span-4 hidden lg:block">
                 <div className="space-y-4 text-right">
-                  <p className="font-mono text-xs text-muted-foreground tracking-widest">BASED IN</p>
-                  <p className="text-lg">Your City, Country</p>
+                  <p className="font-mono text-xs text-muted-foreground tracking-widest">
+                    BASED IN
+                  </p>
+                  <p className="text-lg">Nagpur, India</p>
                 </div>
               </div>
             </div>
@@ -56,7 +62,9 @@ export default function HomePage() {
             {/* Scroll indicator */}
             <div className="absolute bottom-12 left-6 hidden lg:flex items-center gap-3 text-muted-foreground">
               <ArrowDownRight size={16} className="animate-bounce" />
-              <span className="font-mono text-xs tracking-widest uppercase">Scroll</span>
+              <span className="font-mono text-xs tracking-widest uppercase">
+                Scroll
+              </span>
             </div>
           </div>
         </section>
@@ -70,7 +78,9 @@ export default function HomePage() {
                 className="group block p-6 border border-border hover:border-foreground/50 transition-colors"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span className="font-mono text-xs text-muted-foreground">01</span>
+                  <span className="font-mono text-xs text-muted-foreground">
+                    01
+                  </span>
                   <ArrowRight
                     size={16}
                     className="text-muted-foreground group-hover:text-foreground group-hover:translate-x-1 transition-all"
@@ -78,7 +88,8 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-medium mb-2">About & Skills</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  My background, technical skills, and what drives me as an engineer.
+                  My background, technical skills, and what drives me as an
+                  engineer.
                 </p>
               </Link>
 
@@ -87,7 +98,9 @@ export default function HomePage() {
                 className="group block p-6 border border-border hover:border-foreground/50 transition-colors"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span className="font-mono text-xs text-muted-foreground">02</span>
+                  <span className="font-mono text-xs text-muted-foreground">
+                    02
+                  </span>
                   <ArrowRight
                     size={16}
                     className="text-muted-foreground group-hover:text-foreground group-hover:translate-x-1 transition-all"
@@ -95,7 +108,8 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-medium mb-2">Experience</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Internships, projects, and hands-on work that shaped my journey.
+                  Internships, projects, and hands-on work that shaped my
+                  journey.
                 </p>
               </Link>
 
@@ -104,7 +118,9 @@ export default function HomePage() {
                 className="group block p-6 border border-border hover:border-foreground/50 transition-colors"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span className="font-mono text-xs text-muted-foreground">03</span>
+                  <span className="font-mono text-xs text-muted-foreground">
+                    03
+                  </span>
                   <ArrowRight
                     size={16}
                     className="text-muted-foreground group-hover:text-foreground group-hover:translate-x-1 transition-all"
@@ -128,9 +144,13 @@ export default function HomePage() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-foreground opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-foreground"></span>
                 </span>
-                <span className="text-sm">Currently open to internship opportunities</span>
+                <span className="text-sm">
+                  Currently open to internship opportunities
+                </span>
               </div>
-              <p className="font-mono text-xs text-muted-foreground">Last updated: December 2024</p>
+              <p className="font-mono text-xs text-muted-foreground">
+                Last updated: December 2025
+              </p>
             </div>
           </div>
         </section>
@@ -138,5 +158,5 @@ export default function HomePage() {
 
       <Footer />
     </div>
-  )
+  );
 }

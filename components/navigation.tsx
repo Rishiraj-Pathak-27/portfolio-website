@@ -9,7 +9,7 @@ const navItems = [
   { href: "/", label: "Index" },
   { href: "/about", label: "About" },
   { href: "/experience", label: "Experience" },
-  { href: "/resume", label: "Resume" },
+  { href: "/resume", label: "Resume & Achievements" },
 ]
 
 export function Navigation() {
