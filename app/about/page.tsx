@@ -27,11 +27,7 @@ export default function AboutPage() {
 
           {/* Bio Section */}
           <section className="grid lg:grid-cols-12 gap-12 lg:gap-20 mb-24">
-            <div className="lg:col-span-4">
-              <p className="font-mono text-xs tracking-widest uppercase text-muted-foreground sticky top-32">
-                Biography
-              </p>
-            </div>
+            
             <div className="lg:col-span-8 space-y-6">
               <p className="text-lg sm:text-xl leading-relaxed text-muted-foreground">
                 I am pursuing my Engineering (BE) degree in Electronics and Computer

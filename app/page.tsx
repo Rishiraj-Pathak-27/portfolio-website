@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { Tech3DModel } from "@/components/tech-3d-model";
 import { ArrowRight, ArrowDownRight } from "lucide-react";
 import Link from "next/link";
 
@@ -10,29 +11,30 @@ export default function HomePage() {
 
       <main className="flex-1 pt-20">
         {/* Hero Section */}
-        <section className="min-h-[90vh] flex items-center px-6">
-          <div className="max-w-6xl mx-auto w-full">
-            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end">
-              <div className="lg:col-span-8 space-y-8">
+        <section className="min-h-[100vh] flex items-center px-4 sm:px-6 py-8 sm:py-12">
+          <div className="max-w-7xl mx-auto w-full">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Left Content */}
+              <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
                 <div className="space-y-4">
                   <p className="font-mono text-xs tracking-widest uppercase text-muted-foreground">
                     Engineering Student
                   </p>
-                  <h1 className="text-5xl sm:text-6xl lg:text-8xl font-serif font-medium leading-[0.9] tracking-tight text-balance">
+                  <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-medium leading-[1.1] tracking-tight">
                     Rishiraj Pathak
                   </h1>
                 </div>
 
-                <p className="text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed">
+                <p className="text-base sm:text-lg text-muted-foreground max-w-lg leading-relaxed">
                   Passionate engineering student specializing in Electronics and Computer Science. 
                   I build innovative software solutions, exploring new technologies 
                   and solving complex problems through hands-on projects.
                 </p>
 
-                <div className="flex flex-wrap gap-4 pt-4">
+                <div className="flex flex-wrap gap-3 sm:gap-4 pt-4">
                   <Link
                     href="/about"
-                    className="group inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 text-sm font-medium hover:bg-foreground/90 transition-colors"
+                    className="group inline-flex items-center gap-2 bg-foreground text-background px-5 sm:px-6 py-2.5 sm:py-3 text-sm font-medium hover:bg-foreground/90 transition-colors rounded-md"
                   >
                     Learn more about me
                     <ArrowRight
@@ -42,40 +44,35 @@ export default function HomePage() {
                   </Link>
                   <Link
                     href="/resume"
-                    className="inline-flex items-center gap-2 border border-border px-6 py-3 text-sm font-medium hover:bg-secondary transition-colors"
+                    className="inline-flex items-center gap-2 border border-border px-5 sm:px-6 py-2.5 sm:py-3 text-sm font-medium hover:bg-secondary transition-colors rounded-md"
                   >
                     View Resume
                   </Link>
                 </div>
-              </div>
 
-              <div className="lg:col-span-4 flex flex-col items-center lg:items-end justify-center gap-8">
-                {/* my photo */}
-                <div className="relative group w-full max-w-xs sm:max-w-sm lg:max-w-none">
-                  <div className="absolute inset-0 bg-foreground rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 animate-pulse"></div>
-                  <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto lg:mx-0 rounded-full overflow-hidden border-2 border-foreground/20 group-hover:border-foreground/40 transition-all duration-300 shadow-2xl">
-                    <img
-                      src="/professional-photo.jpg"
-                      alt="Rishiraj Pathak"
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-4 text-center lg:text-right w-full">
+                <div className="space-y-4 pt-8 border-t border-border/30">
                   <p className="font-mono text-xs text-muted-foreground tracking-widest">
                     BASED IN
                   </p>
                   <p className="text-lg">Nagpur, India</p>
                 </div>
               </div>
+
+              {/* Right Content - 3D Model */}
+              <div className="order-1 lg:order-2 w-full flex items-center justify-center px-4 sm:px-0">
+                <div className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-full mx-auto">
+                  <Tech3DModel />
+                </div>
+              </div>
             </div>
 
             {/* Scroll indicator */}
-            <div className="absolute bottom-12 left-6 hidden lg:flex items-center gap-3 text-muted-foreground">
-              <ArrowDownRight size={16} className="animate-bounce" />
-              <span className="font-mono text-xs tracking-widest uppercase">
-                Scroll
+            <div className="absolute bottom-10 sm:bottom-1.5 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-1">
+              <div className="mouse-btn">
+                <span className="mouse-scroll"></span>
+              </div>
+              <span className="font-mono text-xs tracking-widest uppercase text-muted-foreground">
+                Scroll Down
               </span>
             </div>
           </div>

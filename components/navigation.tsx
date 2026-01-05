@@ -2,8 +2,6 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
 
 const navItems = [
   { href: "/", label: "Index" },
@@ -14,7 +12,6 @@ const navItems = [
 
 export function Navigation() {
   const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
@@ -46,31 +43,7 @@ export function Navigation() {
             </li>
           ))}
         </ul>
-
-        {/* Mobile Menu Button */}
-        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 -mr-2" aria-label="Toggle menu">
-          {isOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
       </nav>
-
-      {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="md:hidden border-t border-border bg-background">
-          <ul className="px-6 py-4 space-y-4">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className={`block text-lg ${pathname === item.href ? "text-foreground" : "text-muted-foreground"}`}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </header>
   )
 }

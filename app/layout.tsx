@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Space_Grotesk, Playfair_Display, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
+import { MobileBottomNav } from "@/components/mobile-bottom-nav"
+import { PageLoader } from "@/components/page-loader"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -47,7 +49,10 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${playfairDisplay.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
-        {children}
+        <PageLoader>
+          {children}
+          <MobileBottomNav />
+        </PageLoader>
       </body>
     </html>
   )

@@ -209,7 +209,37 @@
     background-position: 180px;
   }
 }
+/* Mouse Scroll Indicator */
+.mouse-btn {
+  margin: 10px auto;
+  width: 28px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+  display: flex;
+  backdrop-filter: blur(10px);
+}
 
+.mouse-scroll {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite;
+}
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(12px);
+  }
+}
 @keyframes shine {
   0% {
     background-position: 0;
