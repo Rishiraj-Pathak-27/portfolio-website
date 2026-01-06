@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Rishiraj Pathak | Software Engineering Student Portfolio",
-  description: "Portfolio of Rishiraj Pathak - Software engineering student showcasing skills, experience, and projects.",
+  title: "Rishiraj Pathak | Student",
+  description: "Portfolio of Rishiraj Pathak - Engineering student showcasing skills, experience, and projects.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
